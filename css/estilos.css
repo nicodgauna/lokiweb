@@ -1,0 +1,304 @@
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+body{
+	color: black;
+	font-family: 'Muli', sans-serif;
+	
+}
+header{
+	padding-top: 1%;
+	padding-right: 2%;
+	padding-bottom: 1%;
+	padding-left: 5%;
+	display: flex;
+	justify-content: space-between;
+	background-color: #172711;
+	position: fixed;
+	width: 100%;
+	z-index: 20;
+}
+
+header div img {
+	max-width: 50%;
+
+}
+
+.horizontal {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+.horizontal > li > a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 20px;
+}
+.horizontal > li:hover{
+	background-color: #174209;
+}
+.vertical {
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	background-color: #174209;
+}
+.horizontal li:hover .vertical{
+	display: block;
+}
+.vertical li:hover{
+	background-color: black;
+}
+.vertical li a{
+	display: block;
+	color: white;
+	padding: 15px 15px 15px 20px;
+	text-decoration: none;
+}
+
+section  {
+	
+	background-color: #174209;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 5%;
+	padding-top: 0%;
+	width: 100%;
+}
+
+
+.principal{
+	width: 100%;
+	height: 650px;
+	background-image: url(../imagenes/galeria/loki_minutes.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	color: #ffffff;
+	text-align: center;
+}
+
+
+
+.principal div #logo {
+
+	display: flex;
+	margin-top: 90%;
+	margin-left: 10%;
+	justify-content: center;
+}
+
+
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+	background-color: #174209;
+
+}
+footer img{
+	max-width: 3rem;
+	width: 100%;
+	height: auto;
+	margin-right: .5%;
+	padding: 10%;
+	
+}
+
+.secundario{
+	
+	padding-left: 3%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	padding-right: 3%;
+	display: flex;
+	justify-content: center;
+}
+.secundario div {
+	display: inline;
+	width: 33%;
+	padding-left: 2%;
+	text-align: center;
+	
+	}
+
+.secundario div img {
+	width: 90%;
+	border-radius: 10px;
+	
+}
+
+.secundario div a{
+	color: white;
+	text-decoration: none;
+}
+.secundario div h2 {
+	margin: 5px;
+	color: white;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+#titulopers {
+
+  font-family: 'Muli', sans-serif;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-color: #174209;
+  text-align: center;
+  color: #fff;
+  padding-top: 8%;
+  padding-bottom: 0%;
+}
+.cards {
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: #174209;
+}
+
+.container {
+  display: flex;
+  width: 90vw;
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  -webkit-transition: all 700ms ease-in;
+}
+
+.panel h3 {
+  font-size: 13px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+
+header {
+	position: sticky;
+}
+.container {
+    width: 100vw;
+  }
+  header div, header a {
+	flex: 1 0 50%;
+}
+
+header div img {
+    max-width: 50%;
+    padding-top: 2%;
+}
+header nav {
+	flex-basis: 100%;
+
+}
+
+.icon {
+	display: block;
+	padding-right: 0.6rem;
+	text-align: right;
+}
+nav ul {
+	display: none;
+}
+nav.responsive ul {
+	display: block;
+}
+nav.responsive ul li {
+	display: block;
+	text-align: center;
+	padding: 0.5rem;
+}
+nav.responsive ul li a {
+	padding-right: 0;
+}
+section{
+	max-width: 480px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.principal{
+	height: 250px;
+	padding: 10%;
+}
+
+.principal div{
+	height: 598px;
+
+}
+.principal div img {
+	height: 46px;
+	padding-left: 19%;
+}
+.secundario{
+	margin-top: 1%;
+	display: block;
+}
+.secundario div{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 90%;
+	height: 253px;
+	margin-top: 5%;
+}
+.secundario div a img{
+	margin-bottom: 1rem;
+}
+h2{
+	font-size: 1rem;
+}
+h4{
+	font-size: 1rem;
+}
+footer{
+	height: 80px;
+	justify-content: center;
+}
+footer img{
+	max-width: 3rem;
+}
+ 
+}

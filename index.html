@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css">
+        <title> Loki - La serie. </title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <a href="index.html"><img src="imagenes/galeria/logo loki.png" alt="Logo Loki"></a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+            <nav id="menu_bar" class="">
+                <ul class="horizontal">
+                        <li><a href="index.html">INICIO</a></li>
+                        <li>
+                            <a href="#">LA SERIE</a>
+                            <ul class="vertical">
+                                <li><a href="personajes.html">PERSONAJES</a></li>
+                                <li><a href="temporadas.html">TEMPORADAS</a></li>
+                            </ul>
+                        </li>       
+                        <li><a href="galeria.html">GALERIA</a></li>
+                        <li><a href="reseñas.html">RESEÑAS</a></li>
+                        <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>  
+        </header>
+        <section>
+            <article class="principal">
+                <div>
+                    <img id="logo" src="imagenes/galeria/logo loki.png" alt="Logo Loki">
+                    <h1>Desata el caos con Loki: Explora el multiverso</h1>
+                </div>
+                </article>
+            <article class="secundario">
+                <div>
+                    <img src="imagenes/galeria/throg.jpg" alt="Throg">
+                    <h2>EASTER EGGS</h2>
+                </div>
+                <div>
+                    <a href="https://www.youtube.com/watch?v=KcBStos46EM"><img src="imagenes/galeria/trailer.jpg" alt="Throg">
+                    <h2>TRAILER OFICIAL</h2>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.marvel.com/movies"><img src="imagenes/galeria/Marvel Studios.jpg" alt="MARVEL STUDIOS">
+                    <h2>MARVEL STUDIOS</h2>
+                    </a>
+                </div>
+            </article>        
+        </section>
+        <footer>
+            <a href="#"><img src="imagenes/redes/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="imagenes/redes/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="imagenes/redes/youtube.png" alt="Youtube"></a>
+            <a href="#"><img src="imagenes/redes/instagram.png" alt="Instagram"></a>
+        </footer>
+        <script type="text/javascript">
+            function myFunction() {
+              var x = document.getElementById("menu_bar");
+              if (x.className === "") {
+                x.className += "responsive";
+              } else {
+                x.className = "";
+              }
+            }
+        </script>
+    </body>     
+</html>

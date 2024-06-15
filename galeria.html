@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link href="css/lightbox.css" rel="stylesheet">
+        <title> Loki - La serie. </title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <a href="index.html"><img src="imagenes/galeria/logo loki.png" alt="Logo Loki"></a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+            <nav class="menu_bar">
+                <ul class="horizontal">
+                        <li><a href="index.html">INICIO</a></li>
+                        <li>
+                            <a href="#">LA SERIE</a>
+                            <ul class="vertical">
+                                <li><a href="personajes.html">PERSONAJES</a></li>
+                                <li><a href="temporadas.html">TEMPORADAS</a></li>
+                            </ul>
+                        </li>       
+                        <li><a href="galeria.html">GALERIA</a></li>
+                        <li><a href="reseñas.html">RESEÑAS</a></li>
+                        <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>  
+        </header>
+        <section>
+            <article class="secundario">
+                <a class="example-image-link" href="imagenes/reparto/b15.jpg" data-lightbox="Buzz" data-title="Buzz Lightyear con su gato."><img class="example-image" src="imagenes/reparto/b15.jpg" alt="Buzz Lightyear con su gato"/></a>
+                <a class="example-image-link" href="imagenes/reparto/b15.jpg" data-lightbox="Buzz" data-title="Buzz Lightyear señalando su imagen en un espejo."><img class="example-image" src="imagenes/reparto/b15.jpg" alt="Buzz Lightyear señalando su imagen en un espejo"/></a>
+                <a class="example-image-link" href="imagenes/reparto/b15.jpg" data-lightbox="Buzz" data-title="Buzz Lightyear volando"><img class="example-image" src="imagenes/reparto/b15.jpg" alt="Buzz Lightyear volando"/></a>
+            </article>
+        </section>
+        <footer>
+            <a href="#"><img src="imagenes/redes/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="imagenes/redes/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="imagenes/redes/youtube.png" alt="Youtube"></a>
+            <a href="#"><img src="imagenes/redes/instagram.png" alt="Instagram"></a>
+        </footer>
+        <script type="text/javascript">
+            function myFunction() {
+              var x = document.getElementById("menu_bar");
+              if (x.className === "") {
+                x.className += "responsive";
+              } else {
+                x.className = "";
+              }
+            }
+        </script>
+        <script src="js/lightbox-plus-jquery.min.js"></script>
+    </body>     
+</html>
