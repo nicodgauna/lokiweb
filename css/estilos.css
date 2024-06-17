@@ -15,7 +15,7 @@ body{
         -1px  1px 0 #000,
          1px  1px 0 #000; /* Sombra negra */
 	background-color: #174209;
-	
+	color: #fff;
 	}
 header{
 	padding-top: 1%;
@@ -78,7 +78,7 @@ section  {
 	padding-bottom: 5%;
 	padding-top: 6%;
 	width: 100%;
-	height: 1060px;
+	
 }
 
 
@@ -128,6 +128,9 @@ footer img{
 	padding: 10%;
 }
 
+footer img:hover {
+	transform: scale(1.05);
+}
 footer .redes{
 
 	display: flex;
@@ -172,6 +175,10 @@ footer .copy{
 	
 }
 
+.secundario div img:hover{
+	transform: scale(1.05);
+}
+
 .secundario div a{
 	color: white;
 	text-decoration: none;
@@ -181,8 +188,20 @@ footer .copy{
 	color: white;
 }
 
-
-
+.secundario div.parrafo {
+	display: inline;
+	width: 50%;
+	padding-left: 2%;
+	text-align:justify;
+	
+	}
+.secundario div.imaghist {
+	display: inline;
+	width: 50%;
+	padding-left: 2%;
+	text-align: center;
+	
+	}
 * {
   box-sizing: border-box;
 }
@@ -208,6 +227,7 @@ footer .copy{
   overflow: hidden;
   margin: 0;
   background-color: #174209;
+  padding-top: 0%;
 }
 
 .container {
@@ -265,6 +285,11 @@ footer .copy{
 	width: 100%;
 	border-radius: 10px;
 	height: 150px;
+}
+
+.example-image-link:hover {
+
+	transform: scale(1.05);
 }
 
 h1 {
