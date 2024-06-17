@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/estilos.css">
@@ -14,10 +17,11 @@
             <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
             <nav id="menu_bar" class="">
                 <ul class="horizontal">
-                        <li><a href="index.html">INICIO</a></li>
+                        <li><a style="background-color: #174209" href="index.html">INICIO</a></li>
                         <li>
                             <a href="#">LA SERIE</a>
                             <ul class="vertical">
+                                <li><a href="historia.html">HISTORIA</a></li>
                                 <li><a href="personajes.html">PERSONAJES</a></li>
                                 <li><a href="temporadas.html">TEMPORADAS</a></li>
                             </ul>
@@ -26,13 +30,13 @@
                         <li><a href="reseñas.html">RESEÑAS</a></li>
                         <li><a href="contacto.html">CONTACTO</a></li>
                 </ul>
-            </nav>  
+              </nav>  
         </header>
         <section>
             <article class="principal">
                 <div>
                     <img id="logo" src="imagenes/galeria/logo loki.png" alt="Logo Loki">
-                    <h1>Desata el caos con Loki: Explora el multiverso</h1>
+                    <h1 id="tituloinicio">Desata el caos con Loki: Explora el multiverso</h1>
                 </div>
                 </article>
             <article class="secundario">
@@ -53,10 +57,15 @@
             </article>        
         </section>
         <footer>
-            <a href="#"><img src="imagenes/redes/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="imagenes/redes/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="imagenes/redes/youtube.png" alt="Youtube"></a>
-            <a href="#"><img src="imagenes/redes/instagram.png" alt="Instagram"></a>
+            <div class="redes">
+                <a href="#"><img src="imagenes/redes/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="imagenes/redes/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="imagenes/redes/youtube.png" alt="Youtube"></a>
+                <a href="#"><img src="imagenes/redes/instagram.png" alt="Instagram"></a>
+            </div>
+            <div class="copy">
+                <h4>©2024 Hecho por Gauna, Nicolás Daniel</h4>
+            </div>
         </footer>
         <script type="text/javascript">
             function myFunction() {
