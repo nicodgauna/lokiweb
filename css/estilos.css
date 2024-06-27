@@ -16,6 +16,7 @@ body{
          1px  1px 0 #000; /* Sombra negra */
 	background-color: #174209;
 	color: #fff;
+	
 	}
 header{
 	padding-top: 1%;
@@ -32,6 +33,7 @@ header{
 
 header div img {
 	max-width: 50%;
+	padding-top: 3%;
 
 }
 
@@ -78,6 +80,8 @@ section  {
 	padding-bottom: 5%;
 	padding-top: 6%;
 	width: 100%;
+	background-image: url(../imagenes/galeria/logo_casco_fondo1.png);
+	background-repeat: repeat;
 	
 }
 
@@ -85,9 +89,9 @@ section  {
 .principal{
 	width: 100%;
 	height: 650px;
-	background-image: url(../imagenes/galeria/loki_minutes.jpg);
-	background-size:cover;
-	background-repeat: no-repeat;
+	background-image: url(../imagenes/galeria/loki1_.jpg);
+	background-repeat:no-repeat;
+	background-size: contain;
 	display: flex;
 	justify-content:center;
 	align-items: center;
@@ -103,11 +107,11 @@ section  {
 .principal div #logo {
 	
 	display: flex;
-    margin-top: 70%;
-    margin-bottom: -3%;
-    margin-left: 31%;
+    margin-top: 30%;
+    margin-bottom: 0%;
+    margin-left: 7%;
     justify-content: center;
-    height: 139px;
+    height: 516px;
 }
 
 
@@ -137,7 +141,9 @@ footer .redes{
     justify-content: center;
     align-items: center;
     height: 46px;
-	background-color: #174209;
+	background-color: #172711;
+	padding-top: 3%;
+	padding-bottom: 1%;
 	
 }
 
@@ -147,7 +153,7 @@ footer .copy{
     align-items: center;
     justify-content: center;
     height: 3rem;
-	background-color:#174209;
+	background-color:#172711;
 	color: #fff;
 	
 }
@@ -195,6 +201,13 @@ footer .copy{
 	text-align:justify;
 	
 }
+
+div.contenedor{
+	background-color: #172711;
+	margin: 20px;
+	border-radius: 10px;
+	padding-right: 27px;
+}
 .secundario div.imaghist {
 	display: inline;
 	width: 50%;
@@ -228,28 +241,19 @@ footer .copy{
   box-sizing: border-box;
 }
 
-#titulopers {
-
-  font-family: "Skranji", system-ui;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  background-color: #174209;
-  text-align: center;
-  color: #fff;
-  padding-top: 5.5%;
-  padding-bottom: 0%;
-}
 .cards {
   font-family: "Skranji", system-ui;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 83.5vh;
   overflow: hidden;
-  margin: 0;
-  background-color: #174209;
+  margin: -1%;
+  margin-left: -3px;
+  margin-top: 31px;
+  background-color: #172711;
   padding-top: 0%;
+  border-radius: 10px;
 }
 
 .container {
@@ -305,8 +309,9 @@ footer .copy{
 .reseñas p{
 	background-color: #172711;
 	border-radius: 10px;
-	text-align: center;
+	text-align: justify;
 	font-style: oblique;
+	padding: 10px;
 }
 
 .reseñas {
@@ -318,9 +323,24 @@ footer .copy{
 	padding: 1em;
 	border-radius: 10px;
 }
+
+div#cont_reseñas {
+	background-color: #172711;
+	border-radius: 10px;
+	align-items: center;
+	display: ruby;
+	padding-top: 20px;
+}
+
+div#cont_reseñas img {
+	
+	height: 100px;
+	align-items: center;
+	
+}
 .example-image-link img {
 
-	width: 100%;
+	width: 260px;
 	border-radius: 10px;
 	height: 150px;
 }
@@ -347,6 +367,7 @@ h1 {
 	padding-left: 1%;
     font-size: 45px;
     padding-bottom: 45%;
+	display: none;
 }
 /* aca empieza lo del form*/
 div.form {
@@ -356,7 +377,7 @@ div.form {
 	
 	width:100%;
 	height:606px;
-	background:#e6e6e6;
+	background:#172711;
 	border-radius:8px;
 	box-shadow:0 0 40px -10px #000;
 	margin:0;
@@ -389,10 +410,12 @@ button{
 	padding:8px 12px;
 	margin:50px 0 0;
 	border:2px solid #78788c;
-	background:0;color:#5a5a6e;
+	background:0;
+	color:white;
 	cursor:pointer;
 	transition:all .3s;
 	font-family: "Skranji", system-ui;
+	background-color: #174209;
 }
 
 button:hover{
@@ -404,7 +427,7 @@ div.pie_contacto{
 	position:absolute;
 	bottom:-15px;
 	right:9%;
-	background:#50505a;
+	background:#174209;
 	color:#fff;
 	width:420px;
 	padding:16px 4px 16px 0;
@@ -426,6 +449,11 @@ div.pie_contacto span{
 }
 
 @media (max-width: 480px) {
+	
+.reseñas {
+	grid-template-columns: repeat(1, 1fr);
+}
+
 
 header {
 	position: sticky;
@@ -443,6 +471,7 @@ header div img {
 }
 header nav {
 	flex-basis: 100%;
+	
 
 }
 
@@ -512,5 +541,5 @@ footer{
 footer img{
 	max-width: 3rem;
 }
- 
+
 }
