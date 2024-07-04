@@ -24,6 +24,7 @@ header{
 	padding-bottom: 1%;
 	padding-left: 5%;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	background-color: #172711;
 	position: fixed;
@@ -448,98 +449,170 @@ div.pie_contacto span{
     text-align: center;
 }
 
-@media (max-width: 480px) {
-	
-.reseñas {
-	grid-template-columns: repeat(1, 1fr);
-}
-
-
-header {
-	position: sticky;
-}
-.container {
-    width: 100vw;
-  }
-  header div, header a {
-	flex: 1 0 50%;
-}
-
-header div img {
-    max-width: 50%;
-    padding-top: 2%;
-}
-header nav {
-	flex-basis: 100%;
-	
-
-}
-
 .icon {
-	display: block;
-	padding-right: 0.6rem;
-	text-align: right;
-}
-nav ul {
+	color: white;
 	display: none;
 }
-nav.responsive ul {
-	display: block;
-}
-nav.responsive ul li {
-	display: block;
-	text-align: center;
-	padding: 0.5rem;
-}
-nav.responsive ul li a {
-	padding-right: 0;
-}
-section{
-	max-width: 480px;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-}
-.principal{
-	height: 250px;
-	padding: 10%;
-}
 
-.principal div{
-	height: 598px;
+@media (max-width: 480px) {
 
-}
-.principal div img {
-	height: 46px;
-	padding-left: 19%;
-}
-.secundario{
-	margin-top: 1%;
-	display: block;
-}
-.secundario div{
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-	width: 90%;
-	height: 253px;
-	margin-top: 5%;
-}
-.secundario div a img{
-	margin-bottom: 1rem;
-}
-h2{
-	font-size: 1rem;
-}
-h4{
-	font-size: 1rem;
-}
-footer{
-	height: 80px;
-	justify-content: center;
-}
-footer img{
-	max-width: 3rem;
-}
+    .reseñas {
+        grid-template-columns: repeat(1, 1fr);
+    }
 
+    header {
+        position: sticky;
+    }
+    .container {
+        width: 100vw;
+    }
+    header div, header a {
+        flex: 1 0 50%;
+    }
+
+    header div img {
+        max-width: 50%;
+        padding-top: 2%;
+    }
+    header nav {
+        flex-basis: 100%;
+        display: none;
+    }
+
+    nav#menu_bar.responsive {
+        display: block;
+    }
+
+    .icon {
+        display: block;
+        padding-right: 0.6rem;
+        text-align: right;
+    }
+    nav ul {
+        display: none;
+    }
+    nav.responsive ul {
+        display: block;
+    }
+    nav.responsive ul > li {
+        display: block;
+        text-align: center;
+        padding: 0.5rem;
+    }
+    nav.responsive ul li a {
+        padding-right: 0;
+    }
+    section {
+        max-width: 480px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .principal {
+        height: 250px;
+        padding: 10%;
+    }
+
+    .principal div {
+        height: 598px;
+    }
+    .principal div img {
+        height: 46px;
+        padding-left: 19%;
+    }
+    .secundario {
+        margin-top: 1%;
+        display: block;
+    }
+    .secundario div {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 90%;
+        height: 253px;
+        margin-top: 5%;
+    }
+
+	.secundario div.div_inicio{
+
+		width: 86%;
+		height: 275px;
+	}
+	.secundario div.parrafotemp p {
+		display: block;
+		width: 100%;
+	}
+
+	.example-image-link img{
+		width: 100%;
+		border-radius: 10px;
+		height: 150px;
+	}
+
+	.galeria {
+		grid-template-columns: repeat(2, 1fr);
+	}
+    .secundario div a img {
+        margin-bottom: 1rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    footer {
+        height: 80px;
+        justify-content: center;
+    }
+    footer img {
+        max-width: 3rem;
+    }
+
+    
+    .horizontal {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .horizontal > li {
+        text-align: center; 
+    }
+
+    
+    .horizontal > li > .vertical {
+        display: none; 
+        position: static; 
+        width: 100%; 
+        background-color: black;
+        padding: 0;
+        margin-top: 10px; 
+        border-radius: 5px;
+    }
+
+    
+    .horizontal li:hover .vertical {
+        display: block;
+    }
+
+    
+    .vertical li {
+        display: block; 
+        text-align: center;
+        padding: 10px 0; 
+        border-bottom: 1px solid #333; 
+    }
+
+    .vertical li a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 10px 0; 
+        white-space: nowrap; 
+    }
+
+    .vertical li:hover {
+        background-color: #174209;
+    }
 }
