@@ -98,6 +98,7 @@ section  {
 	align-items: center;
 	color: #ffffff;
 	text-align: center;
+	
 }
 
 .principal div{
@@ -170,7 +171,7 @@ footer .copy{
 }
 .secundario div {
 	display: block;
-	width: 33%;
+	width: 40%;
 	padding-left: 2%;
 	text-align: center;
 	
@@ -203,6 +204,12 @@ footer .copy{
 	
 }
 
+div.contenedortemp{
+	background-color: #172711;
+	margin: 20px;
+	border-radius: 10px;
+	padding-right: 27px;
+}
 div.contenedor{
 	background-color: #172711;
 	margin: 20px;
@@ -276,23 +283,27 @@ div.contenedor{
   -webkit-transition: all 700ms ease-in;
 }
 
-.panel h3 {
-  font-size: 13px;
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  margin: 0;
-  opacity: 0;
-}
+
 
 .panel.active {
   flex: 5;
 }
 
-.panel.active h3 {
-  opacity: 1;
-  transition: opacity 0.3s ease-in 0.4s;
-}
+
+
+.panel p {
+	font-size: 13px;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	margin: 0;
+	opacity: 0;
+  }
+
+  .panel.active p {
+	opacity: 1;
+	transition: opacity 0.3s ease-in 0.4s;
+  }
 
 .galeria{
 
@@ -389,6 +400,9 @@ div.form {
 	position:relative
 }
 
+input, textarea{
+	color: white;
+}
 input{
 	width:100%;
 	margin-top: 30px;
@@ -471,7 +485,7 @@ div.pie_contacto span{
     }
 
     header div img {
-        max-width: 50%;
+        max-width: 64%;
         padding-top: 2%;
     }
     header nav {
@@ -487,6 +501,9 @@ div.pie_contacto span{
         display: block;
         padding-right: 0.6rem;
         text-align: right;
+		padding-top: 9px;
+		padding-right: 14px;
+		font-size: 22px;
     }
     nav ul {
         display: none;
@@ -511,6 +528,7 @@ div.pie_contacto span{
     .principal {
         height: 250px;
         padding: 10%;
+		margin-top: -29px;
     }
 
     .principal div {
@@ -615,4 +633,60 @@ div.pie_contacto span{
     .vertical li:hover {
         background-color: #174209;
     }
+
+	div.pie_contacto{
+		position:absolute;
+		bottom: -20px;
+		right:3%;
+		background:#174209;
+		color:#fff;
+		width:335px;
+		padding:16px 4px 16px 0;
+		border-radius:6px;
+		height: 46px;
+		box-shadow:10px 10px 40px -14px #000;
+	}
+
+	.form{
+
+		padding-left: 30px;
+		margin-left: 24px;
+		width: 88%;
+		padding-top: 38px;
+		margin-top: 14px;
+		height: 460px;
+		margin-bottom: 14px;
+	}
+	
+	div.contenedor {
+		padding-right: 5px;
+		
+	}
+	
+	div.contenedortemp{
+		padding-right: 5px;
+		padding-bottom: 817px;	
+
+	}
+	.secundario div.imagtemp {
+
+		margin-bottom: -54px;
+	}
+
+	.secundario div img {
+		width: 356px;
+		margin-left: -9px;
+	}
+
+	.secundario div.imgcont{
+		padding-left: 34px;
+	}
+	.secundario div h2{
+		margin:-3px;
+	}
+
+	footer .redes{
+		padding-top: 6%;
+	}
+	
 }
